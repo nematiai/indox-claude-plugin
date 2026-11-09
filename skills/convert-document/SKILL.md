@@ -18,9 +18,9 @@ Pick the first option that fits:
 ## 2. Convert
 
 1. If you are unsure the pair is supported, call `list_formats` with the kind: `pdf` (documents and PDFs), `image`, `video`, `model` (3D) or `font`.
-2. Call `convert_file` with `kind`, `target_format` and exactly one source. For PDF operations (compress, merge, split, rotate, redact, sign, OCR) use `pdf_tools_list`, then `pdf_tool_describe`, then `pdf_run_tool`.
-3. Call `wait_conversion` with the returned id. If the result says `finished: false`, call it again; the job keeps running.
-4. Call `download_result` and give the user the link and when it expires.
+2. Call `convert_file` with `kind`, `target_format` and exactly one source (`file_url` or `s3_key`). Keep the `id` it returns. For PDF operations (compress, merge, split, rotate, redact, sign, OCR) use `pdf_tools_list`, then `pdf_tool_describe`, then `pdf_run_tool`.
+3. Call `wait_conversion` with the same `kind` and `conversion_id` set to that `id`. If the result says `finished: false`, call it again; the job keeps running.
+4. Call `download_result` with the same `kind` and `conversion_id`, and give the user the `download_url` and when it expires.
 
 ## Credits and errors
 
