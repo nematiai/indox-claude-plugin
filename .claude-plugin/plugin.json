@@ -1,0 +1,19 @@
+{
+  "name": "indox",
+  "displayName": "indox",
+  "version": "1.0.0",
+  "description": "Convert documents, images, video, 3D models and fonts, and pull tables out of PDFs, with your indox.org account.",
+  "author": {
+    "name": "NEMATI AI LLC",
+    "url": "https://indox.org"
+  },
+  "homepage": "https://indox.org",
+  "repository": "https://github.com/nematiai/indox-claude-plugin",
+  "license": "MIT",
+  "keywords": ["pdf", "convert", "documents", "tables", "excel", "ocr", "images", "video"],
+  "icon": "./icon.svg",
+  "documentationUrl": "https://indox.org/en-US/developers/sdk/mcp",
+  "supportUrl": "https://indox.org/support",
+  "privacyPolicyUrl": "https://indox.org/privacy",
+  "termsOfServiceUrl": "https://indox.org/terms"
+}
