@@ -22,13 +22,13 @@ The plugin ships no code: only these instructions and the connector address.
 | `download_result` | A short-lived download link for the result |
 | `create_upload_url`, `list_files` | Upload a local file to your indox storage, list stored files |
 | `credits_balance`, `usage_summary` | Your credit balance and recent usage |
-| `pdf_ai_job`, `health` | AI job status, service check |
+| `health` | Service check |
 
 ## Data handling
 
 - **Where data goes:** only to indox. Claude talks to `mcp.indox.org`, which calls the indox API at `indox.org` as you. The plugin sends nothing anywhere else.
 - **What is sent:** the files or links you ask Claude to convert, and the options for each job. Results come back as download links.
-- **Sign-in:** OAuth on indox.org. You choose what Claude may do (convert files, use your storage, read your credits), and you can remove the connection at any time.
+- **Sign-in:** OAuth on indox.org. You choose what Claude may do (convert files, use your storage, read your credits). To cut off access at once, open Settings → Apps → Connected apps on indox.org and choose Disconnect.
 - **Storage and retention:** as described in the [indox Privacy Policy](https://indox.org/privacy). Use is subject to the [indox Terms of Service](https://indox.org/terms).
 
 ## Use it
